@@ -55,9 +55,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno660
 QCOM_BOARD_PLATFORMS += lahaina
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/t2q/prebuilt/Image.gz
-TARGET_PREBUILT_DTB := device/samsung/t2q/prebuilt/dtb
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/t2q/prebuilt/recoverydtbo
+TARGET_PREBUILT_KERNEL := device/samsung/q2q/prebuilt/Image
+TARGET_PREBUILT_DTB := device/samsung/q2q/prebuilt/dtb
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/q2q/prebuilt/recoverydtbo
 #BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64
@@ -77,7 +77,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) --pagesize $(BOARD_KERNEL_PAGESIZE) --board "SRPSI24B001"
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB) --dtb_offset $(BOARD_DTB_OFFSET)
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/t2q/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/q2q/bootimg.mk
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true

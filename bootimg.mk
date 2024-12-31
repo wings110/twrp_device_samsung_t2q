@@ -1,4 +1,4 @@
-MKBOOTIMG := device/samsung/t2q/mkbootimg
+MKBOOTIMG := device/samsung/q2q/mkbootimg
 
 $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES) $(BOOTIMAGE_EXTRA_DEPS)
 	$(call pretty,"Target boot image: $@")
